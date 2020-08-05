@@ -1,8 +1,87 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+
 ul{
+  list-style-type: none;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.header{
+  background-color: slategrey;
+}
+
+.navigation li{
+  padding:5px;
+}
+
+.sitename{
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 6px;
+}
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.artists{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.artist{
+  box-shadow: 10px 10px 8px #888888;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  width: 250px;
+  height: 180px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(16, 117, 3);
+}
+
+.bandimg{
+  width: 150px;
+  height: 150px;
+}
+
+/* ul{
   list-style: none;
 }
 
-.App {
+.navbutton{
+  padding: .5em;
+}
+
+.navigation{
+  background-color: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ } */
+
+/* .App {
   text-align: center;
 }
 
@@ -39,4 +118,4 @@ ul{
   to {
     transform: rotate(360deg);
   }
-}
+} */

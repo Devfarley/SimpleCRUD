@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Music from './Music';
+import Routes from './config/Routes'
 
 function App() {
   return (
     <div className="App">
-      <Music/>
+      <Routes/>
     </div>
   );
 }

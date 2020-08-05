@@ -20,10 +20,10 @@ export default class Music extends React.Component{
     } 
 
     render(){
-        const displayMusic = this.state.music.map(band => <Band key={band._id} band={band.artist}/>) 
+        const displayMusic = this.state.music.map(band => <Band key={band._id} band={band.artist} bandimg={band.bandimg}/>) 
         return (
-            <div>
-                <ul>
+            <div className='musicstuff'>
+                <ul className='artists'>
                     {displayMusic}
                 </ul>
             </div>    
