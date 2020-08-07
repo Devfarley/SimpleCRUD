@@ -13,6 +13,8 @@ ul{
   list-style-type: none;
 }
 
+
+
 a{
   color: white;
   text-decoration: none;
@@ -20,6 +22,12 @@ a{
 
 a:hover{
   text-decoration: underline;
+}
+
+.homeTitle{
+  padding-top: 80px;
+  text-align: center;
+  font-size: 6em;
 }
 
 .header{
@@ -46,7 +54,7 @@ a:hover{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 50px;
 }
 
 .artist{

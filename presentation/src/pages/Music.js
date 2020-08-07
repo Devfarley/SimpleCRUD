@@ -12,7 +12,6 @@ export default class Music extends React.Component{
         fetch(`${api_url}/music`)
             .then(response => response.json())
             .then(data => this.setState({music:data}))
-            // .then(console.log)
     }
 
     componentDidMount(){
@@ -20,7 +19,8 @@ export default class Music extends React.Component{
     } 
 
     render(){
-        const displayMusic = this.state.music.map(band => <Band key={band._id} band={band.artist} bandimg={band.bandimg}/>) 
+        const displayMusic = this.state.music.map(band => <Band key={band._id} 
+            band={band.artist} bandimg={band.bandimg} />) 
         return (
             <div className='musicstuff'>
                 <ul className='artists'>
@@ -29,6 +29,5 @@ export default class Music extends React.Component{
             </div>    
         );
     }
-
 }
 

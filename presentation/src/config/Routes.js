@@ -6,10 +6,11 @@ import{
     Link
 } from "react-router-dom"
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faMusic } from '@fortawesome/free-solid-svg-icons'
+import { faHome,  faUserAlt, faCompactDisc } from '@fortawesome/free-solid-svg-icons'
+// faMusic,
 import Home from '../pages/Home'
 import Music from '../pages/Music'
-
+import Album from '../pages/Album'
 
 
 
@@ -26,7 +27,10 @@ const Routes = () => {
                         <Link to='/'><FontAwesomeIcon icon={faHome}/> Home</Link>
                     </li>
                     <li className='navbutton'>
-                        <Link to='/Artists'><FontAwesomeIcon icon={faMusic}/> Artists</Link>
+                        <Link to='/Artists'><FontAwesomeIcon icon={faUserAlt}/> Artists</Link>
+                    </li>
+                    <li className='navbutton'>
+                        <Link to='/Albums'><FontAwesomeIcon icon={faCompactDisc}/> Albums</Link>
                     </li>
                 </ul>
             </div>
@@ -36,6 +40,9 @@ const Routes = () => {
                     </Route>
                     <Route path ='/Artists'>
                         <Music/>
+                    </Route>
+                    <Route path='/Albums'>
+                        <Album />
                     </Route>
                 </Switch>
             </nav>
